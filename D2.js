@@ -88,11 +88,11 @@ else{console.log("Totale carrello - spedizione inclusa: ", totalShoppingCartBF +
   Alla fine mostra il risultato in console.
 */
 
-const n9 = 5
+const n9 = 10
 const n10 = -3
 const n11 = 10
 
-if(n9 > n10 > n11){
+if(n9 > n10 && n10 > n11){
   console.log(n9, n10, n11)
 }else if(n9 > n10 && n9 < n11){
   console.log(n11, n9, n10)
@@ -102,9 +102,11 @@ if(n9 > n10 > n11){
   console.log(n10, n11, n9)
 }else if(n9 > n10 && n9 > n11 && n11 > n10){
   console.log(n9, n11, n10)
-}else if(n9 < n10 < n11){
-  console.log(n11, n10, n9)}
-
+}else if(n9 < n10 && n10 < n11){
+  console.log(n11, n10, n9)
+}else{
+  console.log("Forse almeno due dei numeri sono uguali")
+}
 
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
