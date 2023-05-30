@@ -38,8 +38,8 @@ if(n4 % 5 === 0){
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
 */
 
-const n5 = 5
-const n6 = -3
+const n5 = -5
+const n6 = 3
 
 if(n5 === 8 || n6 === 8){
   console.log("Uno dei due numeri è pari ad 8")
@@ -47,6 +47,11 @@ if(n5 === 8 || n6 === 8){
   console.log("La somma dei due numeri è pari ad 8")
 }else if (n5-n6 === 8)
 {console.log("La differenza tra i due numeri è pari ad 8")}
+else if (n6-n5 === 8)
+{console.log("La differenza tra i due numeri è pari ad 8")}
+else{
+  console.log("Nessuna delle precedenti")
+}
 
 
 /* ESERCIZIO 5
@@ -97,7 +102,7 @@ if(n9 > n10 > n11){
   console.log(n10, n11, n9)
 }else if(n9 > n10 && n9 > n11 && n11 > n10){
   console.log(n9, n11, n10)
-}else if(n9 > n10 < n11){
+}else if(n9 < n10 < n11){
   console.log(n11, n10, n9)}
 
 
